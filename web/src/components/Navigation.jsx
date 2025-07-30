@@ -13,10 +13,10 @@ const Navigation = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="relative z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/50">
+    <nav className="relative z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/50 box-border">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <div className="flex items-center space-x-3">
+          <div onClick={() => navigate('/')} className="flex items-center space-x-3 hover:cursor-pointer">
             <div className="relative">
               <Sun className="w-10 h-10 text-orange-500" />
               <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full animate-ping"></div>
@@ -32,7 +32,7 @@ const Navigation = () => {
               onClick={() => handleNavigation('/solutions')}
               className={`font-medium transition-colors ${
                 isActive('/solutions')
-                  ? 'text-orange-500'
+                  ? 'text-orange-500 font-semibold'
                   : 'text-slate-600 hover:text-slate-900'
               }`}
             >
@@ -42,7 +42,7 @@ const Navigation = () => {
               onClick={() => handleNavigation('/technology')}
               className={`font-medium transition-colors ${
                 isActive('/technology')
-                  ? 'text-orange-500'
+                  ? 'text-orange-500 font-semibold'
                   : 'text-slate-600 hover:text-slate-900'
               }`}
             >
@@ -52,7 +52,7 @@ const Navigation = () => {
               onClick={() => handleNavigation('/about')}
               className={`font-medium transition-colors ${
                 isActive('/about')
-                  ? 'text-orange-500'
+                  ? 'text-orange-500 font-semibold'
                   : 'text-slate-600 hover:text-slate-900'
               }`}
             >

@@ -32,6 +32,7 @@ import {
   Home
 } from 'lucide-react';
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 const SolutionsPage = () => {
   const [activeModule, setActiveModule] = useState(0);
@@ -482,6 +483,8 @@ const SolutionsPage = () => {
         </div>
       </section>
 
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
