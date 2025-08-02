@@ -4,7 +4,7 @@ import HomePage from './pages/Homepage';
 import SolutionsPage from './pages/SolutionsPage';
 import TechnologyPage from './pages/TechnologyPage';
 import AboutPage from './pages/AboutPage';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
 
