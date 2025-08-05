@@ -115,7 +115,7 @@ const AboutPage = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Calendar className="w-4 h-4" />
-                <span>Academic Year 2024-2025</span>
+                <span>Academic Year 2022-2026</span>
               </div>
               <div className="flex items-center space-x-2">
                 <BookOpen className="w-4 h-4" />

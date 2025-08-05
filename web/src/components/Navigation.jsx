@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Sun } from 'lucide-react';
+import { Sun, LogIn } from 'lucide-react';
 
 const Navigation = () => {
   const navigate = useNavigate();
@@ -58,9 +58,22 @@ const Navigation = () => {
             >
               About
             </button>
-            <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2.5 rounded-xl font-semibold hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 transform hover:-translate-y-0.5">
-              Get Started
-            </button>
+            
+            <div className="flex items-center space-x-4">
+              <button
+                onClick={() => handleNavigation('/signup')}
+               className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2.5 rounded-xl font-semibold hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 transform hover:-translate-y-0.5">
+                Get Started
+              </button>
+              
+              <button 
+                onClick={() => handleNavigation('/login')}
+                className="flex items-center space-x-2 text-slate-600 hover:text-slate-900 font-medium transition-colors border border-slate-300 hover:border-slate-400 px-4 py-2.5 rounded-xl hover:bg-slate-50"
+              >
+                <LogIn className="w-4 h-4" />
+                <span>Login</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
